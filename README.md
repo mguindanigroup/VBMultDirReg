@@ -1,2 +1,2 @@
 # vbmultdir
-Variational Bayes Multinomila Dirichlet
+Variational Bayes Multinomial Dirichlet NLP spike-and-slab regression
