@@ -41,14 +41,31 @@ environment.
 **Simulations**
 
 For p=q=50, run 50 repeated experiments. Data generating mechanism follows previous [work](https://github.com/duncanwadsworth/dmbvs) on Dirichlet Multinomial model. 
-The R code for generating data is in ./data/R-code-simulate-data.R. The simulated data file is in ./data/rep_50_001.h5 and rep_50_01.h5 for overdispersion 0.01 and 0.1 respectively. 
+The R code for generating data is in ./data/R-code-simulate-data.R. Running the R code will generate covariate as well as response data and write them into [h5 file](https://en.wikipedia.org/wiki/Hierarchical_Data_Format). 
+We also provide simulated data file in ./data/rep_50_001.h5 and rep_50_01.h5 for overdispersion 0.01 and 0.1 respectively. 
 
 To start running and to print [precision, recall, MCC, AUC, F1, ACC] after finishing each repeated experiments on simulated data, type:
+
+
 ```
 python train-DirMulVI.py 
 ```
 
+In addition, you can find visualized results of the running example in the ipython notebook provided: non-local-prior-DMVS-SimulationExp.ipynb.
+It includes ROC-AUC plot comparing to other methods. 
+
 **Real Data Experiment**
+
+We apply our variational method with non-local prior to a human gut microbiome
+dataset, which has been previously used in Wu et al., 2011 to investigate the association of dietary
+and environmental variables with the gut microbiota. 
+
+To run the experiment, type:
+```bash
+python train-VI-RealData.py
+
+```
+It will return a bipartite graph indicating the selected association based on false discovery rate of 0.1. 
 
 
 
