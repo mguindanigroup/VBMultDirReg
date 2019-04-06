@@ -33,8 +33,8 @@ matplotlib 3.0.3
 [networkx 2.2](https://networkx.github.io/documentation/stable/install.html)
 
 You can either download and unzip the files or git clone the project on your local machine. Then it is recommended to use [Pycharm](https://www.jetbrains.com/pycharm/download/#section=mac), which gives a convenient one-stop solution to install all the 
-dependencies within this project. After open the project in Pycharm, find the project interpreter and add the above packages into the project's 
-environment. 
+dependencies within this project. After open the project in Pycharm, find the project interpreter and you can add the above packages by searching in the available packages. 
+
 
 ## Running examples
 
@@ -67,5 +67,6 @@ python train-VI-RealData.py
 ```
 It will return a bipartite graph indicating the selected association based on false discovery rate of 0.1. 
 
-
-
+<p align="center">
+<img src="results/bipartite.png" alt="drawing" width="460" >
+</p>
