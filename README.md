@@ -41,11 +41,13 @@ installation in PyCharm.
 
 **Simulations**
 
-For p=q=50, run 50 repeated experiments. Data generating mechanism follows previous [work](https://github.com/duncanwadsworth/dmbvs) on Dirichlet Multinomial model. 
-The R code for generating data is in ./data/R-code-simulate-data.R. Running the R code will generate covariate as well as response data and write them into [h5 file](https://en.wikipedia.org/wiki/Hierarchical_Data_Format). 
-We also provide simulated data file in ./data/rep_50_001.h5 and rep_50_01.h5 for overdispersion 0.01 and 0.1 respectively. 
+Data generating mechanism follows previous [work](https://github.com/duncanwadsworth/dmbvs) on Dirichlet Multinomial model. 
+The R code for generating data is in './data/R-code-simulate-data.R'. Running the R code will generate covariate as well as response data and write them into [h5 file](https://en.wikipedia.org/wiki/Hierarchical_Data_Format). 
+We also provide simulated data file in './data/rep_50_001.h5' for overdispersion 0.01, and 'rep_50_01.h5' for overdispersion 0.1. 
 
-To start running and to print [precision, recall, MCC, AUC, F1, ACC] after finishing each repeated experiments on simulated data, type:
+
+For p=q=50, run 50 repeated experiments.  To start running and to return [precision, recall, MCC, AUC, F1, ACC] after finishing each repeated experiments on simulated data, 
+type:
 
 
 ```
