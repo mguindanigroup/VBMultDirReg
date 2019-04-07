@@ -67,7 +67,7 @@ To run the experiment, type:
 python train-VI-RealData.py
 
 ```
-It will return a bipartite graph indicating the selected association based on false discovery rate of 0.1. 
+It will return a bipartite graph indicating the selected associations based on a Bayesian false discovery rate control of 0.1. 
 
 <p align="center">
 <img src="results/bipartite.png" alt="drawing" width="650" >
