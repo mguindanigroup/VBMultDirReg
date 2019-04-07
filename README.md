@@ -8,6 +8,7 @@ This repository contains TensorFlow implementation of variational Bayes approach
 Suppose we have multivariate counts  as response  data: ![equation](https://latex.codecogs.com/gif.latex?%24%5Cmathbf%7By%7D_%7Bi%7D%20%3D%20%28y_%7Bi1%7D%2C%20%5Cdots%2C%20y_%7BiJ%7D%29%24), e.g. microbiome count data. We can model it using multinomial distribution with parameter  ![equation](https://latex.codecogs.com/svg.latex?%24%5Cmathbf%7B%5Cphi%7D_%7Bi%7D%20%3D%20%28%5Cphi_%7Bi1%7D%2C%20%5Cdots%2C%20%5Cphi_%7BiJ%7D%29%24). Further, to account for the overdispersion of the response,
 it is natural to assume:
  ![equation](https://latex.codecogs.com/svg.latex?%24%5Cmathbf%7B%5Cphi%7D_%7Bi%7D%20%3D%20%28%5Cphi_%7Bi1%7D%2C%20%5Cdots%2C%20%5Cphi_%7BiJ%7D%29%20%5Csim%20%5Ctext%7BDirchlet%7D%28%5Cmathbf%7B%5Cxi%7D_%7Bi%7D%20%29%24)
+ , where ![equation](https://latex.codecogs.com/svg.latex?%5Cxi_i%20%3D%28%5Cxi_%7Bi1%7D%2C%20%5Cdots%2C%20%5Cxi_%7BiJ%7D%29).
  To model and identify important association between the response data and covariates, we assume: 
  
  ![equation](https://latex.codecogs.com/svg.latex?%5Cxi_%7Bij%7D%20%3D%20%5Calpha_j%20&plus;%20%5Csum_%7Bp%20%3D%201%7D%5EP%20%5Cbeta_%7Bpj%7D%20%5C%2C%20%5Cmathbf%7Bx%7D_%7Bip%7D)
